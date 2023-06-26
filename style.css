@@ -1,0 +1,98 @@
+html {
+    height: 100%;
+    background-color: rgb(4,150,255);
+    background: linear-gradient(62deg, rgba(4,150,255,1) 0%, rgba(1,9,7,1) 79%);
+}
+
+body {
+    background: transparent; 
+    height: 100%;
+    margin: 0;
+    color: rgb(0, 0, 0);  /* or any other color to make text visible */
+}
+
+@font-face {
+    font-family: 'logo';
+    src: url(against_modern_football.ttf);
+}
+
+.card {
+    width:100%;
+    height: 100%;
+    background-color: antiquewhite;
+    border-radius: 12px;
+    position:relative;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: bold;
+    text-align: right;
+    width:90%;
+    padding-right: 10%;
+    padding-bottom: 0px;
+    font-family: 'logo';
+    position : absolute; left: 5%; top: -2%;}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    width: 92%;
+    padding-right: 6%;
+    padding-bottom: 0px;
+    font-family: Helvetica,Arial,sans-serif;
+    position:relative; 
+    left: 0%; 
+    top: 50%;
+    margin-top: 35px;
+}
+
+
+#grid-container {
+    display: grid;
+    grid-template-rows: .75fr 3.5fr .75fr;
+    grid-template-columns: 1fr 3fr 1fr;
+
+    height: 100vh;
+    width: 100vw;
+}
+  
+.grid-item {
+    border: 1px solid #000; /* This line is optional. It's just to show the grid lines. */
+}
+
+
+#grid-login {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+img.login {
+    grid-row: 1/4;
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    float: left;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+input[type=email],[type=password]{
+    width: 25%;
+    height: 25px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    padding-left: 6px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    font-weight: 100;
+    font-family: Helvetica,Arial,sans-serif;
+
+}
